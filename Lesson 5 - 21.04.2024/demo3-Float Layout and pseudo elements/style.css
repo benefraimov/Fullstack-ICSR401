@@ -1,0 +1,18 @@
+.section1 article {
+  border: 1px solid black;
+  float: left;
+  max-width: 60%;
+}
+
+.section1 aside {
+  border: 1px solid black;
+  float: right;
+  max-width: 40%;
+}
+
+/* pseudo elements */
+.section1::after {
+  content: "";
+  display: block;
+  clear: both;
+}

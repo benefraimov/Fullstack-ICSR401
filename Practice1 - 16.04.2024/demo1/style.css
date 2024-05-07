@@ -1,0 +1,28 @@
+.header2,
+.header1 {
+  color: red;
+  background-color: aliceblue;
+  font-weight: 600;
+  letter-spacing: normal;
+  /*
+    more options
+  */
+}
+
+.header1 {
+  font-size: 15px;
+}
+
+.header2 {
+  font-size: 5px;
+}
+
+.selector1.selector2 {
+  color: blue;
+}
+
+/* .header1 {
+  color: blue;
+  background-color: aqua;
+  font-size: large;
+} */

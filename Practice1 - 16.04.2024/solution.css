@@ -1,0 +1,36 @@
+/* solution 2 */
+.container {
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+}
+
+/* solution 3 */
+p {
+  color: brown;
+}
+
+/* solution 4 */
+.highlight {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* solution 6 */
+.list-item {
+  border: 1px solid red;
+  padding: 20px;
+}
+
+/* solution 8 */
+.center-text {
+  text-align: center;
+}
+
+/* solution 10 */
+.random-class-name h1 {
+  font-size: 20px;
+  color: violet;
+  background-color: bisque;
+  width: 20%;
+}

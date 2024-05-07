@@ -1,0 +1,43 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+/* Main Content Styles */
+.container {
+  max-width: 960px;
+  background-color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}

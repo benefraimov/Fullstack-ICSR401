@@ -1,0 +1,13 @@
+/* Floats */
+.side-left {
+  float: left;
+}
+.side-to-side-left {
+  float: left;
+}
+.side-right {
+  float: right;
+}
+.side-to-side-left {
+  float: right;
+}

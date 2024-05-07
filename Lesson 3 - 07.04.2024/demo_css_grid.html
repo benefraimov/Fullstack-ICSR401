@@ -1,0 +1,185 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-weight: lighter;
+            font-size: 20px;
+
+            display: grid;
+
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px 400px 1fr 1fr 100px;
+
+            gap: 10px;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .header {
+            background-color: rgb(34, 32, 32);
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav a:link {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+
+        nav a:visited {
+            color: rgb(255, 255, 255);
+        }
+
+        nav a:hover {
+            color: rgb(197, 56, 56);
+        }
+
+        .content1 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            background-image: url(pexels-darina-çiço-103567.jpg);
+            background-size: cover;
+        }
+
+        .content2 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .content3 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .content3 form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content3 form h3 {
+            text-align: center;
+        }
+
+        .content3 form div {
+            color: brown;
+        }
+
+        .content3 form div input {
+            background-color: cadetblue;
+            color: whitesmoke;
+        }
+
+        .content3 form div button {
+            background-color: cadetblue;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .content4 {
+            background-image: url(small-one.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content5 {
+            background-image: url(small-two.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer {
+            grid-row-start: 5;
+            grid-row-end: 6;
+
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            background-color: rgb(34, 32, 32);
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+        <div class="content1"></div>
+        <div class="content2">
+            <p>
+                Discover the world with us. <br>
+                Join us to our amazing journey, <br>
+                and enjoy of what the nature has to suggest.
+                <br><br>
+                We are looking for interesting people who
+                are in a greate shape, because the way we
+                about to cross, isn't just about difficulty,
+                it's about endurance!
+            </p>
+        </div>
+        <div class="content3">
+            <form action="#" method="get">
+                <h3> Fill this form, and we will get in
+                    touch.. </h3>
+
+                <div>
+                    Name: <input type="text"
+                        name="fullname">
+                    Email:
+                    <input type="email" name="email">
+                    Phone:
+
+                    <input type="number" name="phone">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="content4"></div>
+        <div class="content5"></div>
+        <div class="footer">Copyright &copy; Kernelios</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+
+<body>
+
+	<h1>Flight Reservation Form</h1>
+
+	<form action="MyServer" method="get">
+		From: <input type="text" name="from">
+		&nbsp;&nbsp;
+		To: <input type="text" name="to">
+		<br><br>
+
+		Departure Date: <input type="date" name="departure">
+		&nbsp;&nbsp;
+		Landing Date: <input type="date" name="landing">
+		<br><br>
+
+		Passengers: <input type="number" name="passengers" min="0" max="20">
+		<br><br>
+
+		Valid Passport? <input type="checkbox" name="passport">
+		<br><br>
+
+		Number of bags:
+		<select name="bags">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<br><br>
+
+		Number of bags 0 <input type="range" name="bags" step="1" min="0" max="3"> 3 <br> <br>
+
+		<input type="submit" value="Order">
+	</form>
+
+</body>
+
+</html>

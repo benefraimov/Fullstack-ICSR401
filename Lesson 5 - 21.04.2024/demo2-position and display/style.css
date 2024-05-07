@@ -1,0 +1,15 @@
+body * {
+  border: 1px solid black;
+}
+
+section article h2 {
+    display: inline-block;
+}
+
+/* section article p div {
+    display: inline;
+} */
+
+.div-inside-p{
+    display: inline;
+}

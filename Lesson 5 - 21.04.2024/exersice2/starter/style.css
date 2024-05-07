@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+
+}
+
+section article,
+section aside {
+  
+}
+
+section article {
+  float: left;
+}
+
+section aside {
+  float: right;
+}
+
+header,
+footer {
+  
+}
+
+nav {
+  
+}
+
+nav ul {
+
+}
+
+nav ul li {
+  
+}
+
+footer {
+  clear: both;
+}

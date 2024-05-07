@@ -1,0 +1,165 @@
+* {
+}
+
+/* PAGE SECTIONS */
+body {
+}
+
+.container {
+}
+
+.main-header {
+}
+
+nav {
+}
+
+article {
+}
+
+.post-header {
+}
+
+aside {
+}
+
+/* SMALLER ELEMENTS */
+h1,
+h2,
+h3 {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+p {
+}
+
+ul,
+ol {
+}
+
+li {
+}
+
+li:last-child {
+}
+
+footer p {
+}
+
+article header p {
+}
+
+#author {
+}
+
+#copyright {
+}
+
+.related-author {
+}
+
+ul {
+}
+
+.related {
+}
+
+.first-li {
+}
+
+li:first-child {
+}
+
+li:last-child {
+}
+
+li:nth-child(even) {
+}
+
+/* Misconception: this won't work! */
+article p:first-child {
+}
+
+/* Styling links */
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+}
+
+a:active {
+}
+
+.post-img {
+}
+
+nav a:link {
+}
+
+nav a:link:last-child {
+}
+
+button {
+}
+
+h1::first-letter {
+}
+
+h3 + p::first-line {
+}
+
+h2 {
+}
+
+h2::before {
+  content: "TOP";
+}
+
+/* FLEXBOX */
+.main-header {
+}
+
+.author-box {
+}
+
+.author {
+}
+
+.related-post {
+}
+
+.related-link:link {
+}
+
+.related-author {
+}
+
+/* CSS GRID LAYOUT */
+.container {
+}
+
+.main-header {
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+}

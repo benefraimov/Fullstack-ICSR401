@@ -1,0 +1,213 @@
+* {
+  margin: 0; /* spaces between elements */
+  padding: 0; /* spaces inside elements */
+  box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+  font-size: 26px;
+  text-transform: uppercase; /* turn the the letters to a capital */
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Inheritance - parent element inherit their styles to their children */
+
+li {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+.related-list {
+  list-style: none;
+}
+
+.author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+  /* font-weight: 600; */
+  font-weight: bold;
+}
+
+/* we can only use each id name once */
+/* if we want to reuse names we define a class */
+
+/* class convention - if you want to use two words write a dash "-" between them */
+/* class convention - or underscore "_" */
+
+/* In the real world we dont use id to style elements - other wise we can get into errors/bugs in our code */
+
+/* RGB model: every color can be represented by a combination of red green and blue between 0-255 on each of the colors*/
+
+/* Pseudo classes - written with one colon :*/
+
+/* instead of defining  a class to a specific element we can use pseudos */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(odd) {
+  color: blue;
+}
+
+li:nth-child(even) {
+  color: purple;
+}
+
+/* if p is not the first child of that article it want work*/
+article p:first-child {
+  color: aqua;
+}
+/* if p is the last child of that article it will work*/
+article p:last-child {
+  color: aqua;
+}
+
+/* Styling Links */
+/* :link - only work on element that is href is real url */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  /* color: #777; usually we give the same color */
+  color: #1098ad;
+}
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Pseudo elements - written with two colon ::*/
+
+h1::first-letter {
+  font-style: noraml;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+p::first-line {
+  color: red;
+}
+
+/* Adjacent sibling */
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+
+/* or before' because of the absolute position it doesnt matter */
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div#container {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+}
+
+div#container,
+div,
+p {
+  padding: 2px 25px 15px 8px;
+  border: 1px solid green;
+}
+
+p {
+  border-radius: 6px;
+}
+
+/* descendant selector */
+div#container p {
+  background-color: green;
+}
+
+/* child selector */
+div#container > p {
+  background-color: green;
+}
+
+/* Adjacent sibling combinator */
+div + p {
+  background-color: green;
+}
+
+/* General sibling combinator */
+div ~ p {
+  background-color: green;
+}

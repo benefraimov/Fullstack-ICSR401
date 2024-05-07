@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+section article,
+section aside {
+  border: 1px solid #ccc;
+}
+
+section article {
+  float: left;
+  max-width: 50%;
+}
+
+section aside {
+  float: right;
+  max-width: 50%;
+}
+
+header,
+footer {
+  background-color: #f0f0f0;
+}
+
+nav {
+  background-color: #e0e0e0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer {
+  clear: both;
+}

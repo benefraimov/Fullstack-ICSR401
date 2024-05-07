@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+    Space:
+    It is the descendant selector. It allows you to style all the nested child elements of a parent element, regardless of how deep they are in the hierarchy.
+
+    div#container p{
+    background-color:green;
+    }
+
+    It will target all p tags within container div in our example.
+    -->
+
+    <!--
+    > Sign:
+    It is a child selector, which selects DIRECT child elements of a   specified parent element.
+
+    div#container > p {
+    background-color:green;
+    }
+    It will target all P element which are direct children of container div, not children of child div.
+    -->
+
+    <!--
+    + (plus) Sign:
+    It is Adjacent sibling combinator. It combines two sequences of simple selectors having the same parent and the second one must come IMMEDIATELY after the first.
+
+    div + p {
+    background-color:green;
+    }
+    css selector sibling
+    It will only select the first element that is immediately preceded by the former selector. In our example, it will target to Second ONLY because the owner P element comes just after Div tag.
+    -->
+
+    <!--
+    ~ (tilde) Sign:
+    It is general sibling combinator and similar to Adjacent sibling combinator. The difference is that the second selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selector.
+
+    div ~ p{
+    background-color:green;
+    }
+    css selector sibling
+    It will target all P elements which follows div i.e. both second and third.
+    -->
+
+    <div id="container">
+        div#container
+        <p>p</p>
+        <div>
+            div
+            <p>p</p>
+        </div>
+        <p>p</p>
+        <p>p</p>
+    </div>
+</body>
+
+</html>

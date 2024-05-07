@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--3 ways to build layouts-->
+<!--
+    1. The old way by Floats Layouts
+    2. The Modern way by FlexBox - 1d
+    2. Another Modern way by CSS Grid - 2d
+    -->
+
+<!--
+    ------------------- Using Floats ----------------------
+    -->
+
+<!-- Float - Allowing positioning elements side by side -->
+<!-- Float - If both children of an elements are floating
+        the element will loose is height -->
+<!--Clearing floats - add a child to clear the float on element(not a good approach)-->
+<!--Clearing floats - clear: both;(if right & left)-->
+<!--Clear Fix(good approach) - clearfix::after {display: block; content: ""; clear: both;(if right & left)}-->
+<!--if an element is influenced by the element before and he his floating we can use clear:both-->
+
+<!--
+    ------------------- Using Flexbox ----------------------
+
+    - Flexbox is a set of related CSS properties for building 1-dimensional layouts
+
+    - The main idea behind flexbox is that enoty soace inside a container element can be automatically divided by its child elements
+
+    - Flexbox makes it easy to automatically align items to one another inside a parent container, both horizontally and vertically
+
+    - Flexbox solves common problems such as vertical centering and creating equal-height columns
+
+    - FlexBox is perfect for replacing floats, allowing us to write fewer and cleaner HTML and CSS code
+    -->
+
+
+<!--
+    ------------------- Using CSS Grid ----------------------
+
+    - CSS Grid is a set of CSS properties for buildinf 2-dimensional layouts 
+
+    - The main idea behind CSS Grid is that we devide a container element into rows and columns that can be filled with its child elements
+
+    - In two-dimensional context, CSS Grid allows us to write less nested HTML and easier-to-read CSS  
+    
+    - CSS Grid is not meant  to replace flexbox! Instead, they work perfectly together. Need a 1D layout? Use flexbox. Need a 2D layout? Use CSS Grid 
+    -->
+
+<body>
+
+</body>
+
+</html>

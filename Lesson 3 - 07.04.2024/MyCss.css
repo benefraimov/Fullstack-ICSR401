@@ -1,0 +1,15 @@
+h1 {
+	color: red;
+	background-color: grey;
+}
+
+input, table {
+	font-size: large;
+	color: yellow;
+	background-color: green;
+}
+
+input[type="email"] {
+	color: red;
+	background-color: blue;
+}

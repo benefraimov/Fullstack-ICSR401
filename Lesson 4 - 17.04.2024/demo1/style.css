@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(91, 126, 91);
+}
+
+.first-header {
+  color: blue;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.second-header {
+  color: aquamarine;
+  font-size: 25px;
+}
+
+div {
+  color: blueviolet;
+}
+
+div a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+/* Pseudo class */
+div:hover {
+  background-color: bisque;
+}
+a:link {
+  font-size: 15px;
+  color: blueviolet;
+  /* color: aquamarine; */
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  font-size: 15px;
+  color: blue;
+}
+
+/* article p:last-child{
+    color: blue;
+}
+article p:first-child{
+    color: red;
+}
+article p:nth-child(2){
+    color: green;
+} */
+
+article p:nth-child(even) {
+  color: green;
+}
+article h2:nth-child(odd),
+article h3:nth-child(odd) {
+  color: rgb(255, 255, 255);
+}
+p {
+ color: transparent;   
+}
+
+footer p {
+    color: rgba(2, 145, 25, 0.5);
+}

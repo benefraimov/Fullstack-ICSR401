@@ -1,0 +1,36 @@
+div#container {
+  display: inline-block;
+  font-weight: bold;
+  width: 200px;
+}
+
+div#container,
+div,
+p {
+  padding: 2px 25px 15px 8px;
+  border: 1px solid green;
+}
+
+p {
+  border-radius: 6px;
+}
+
+/* descendant selector */
+div#container p {
+  background-color: green;
+}
+
+/* child selector */
+div#container > p {
+  background-color: green;
+}
+
+/* Adjacent sibling combinator */
+div + p {
+  background-color: green;
+}
+
+/* General sibling combinator */
+div ~ p {
+  background-color: green;
+}

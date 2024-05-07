@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--First - HTML Tag/Element Anatomy-->
+    <!-- An html element anatomy is Opening tag the Content and the Closing tag -->
+    <!-- If an html element Content contain another element then, it is his child element -->
+    <!-- An html element without Content it's omitted -->
+
+    <!--Second - HTML Document Structure-->
+    <!--Head element is for things that not visible in the browser window,
+        *contain the page title
+        *some additional info about the page
+        *link to css files and othe things 
+    -->
+    <!--meta tags inside head - meta data - data about the data-->
+    <!--<meta charset="UTF-8" />-->
+    <!--Body hold all the content tags or link tags such as <a />-->
+    <!--Third - HTML Semantic Elements-->
+    <!--Semantic elements are elements that have a meaning in the context of the page-->
+    <!--Semantic elements are more readable and more maintainable-->
+    <!--Headings - h1 to h6 the sizing of the headers going down as we use numbers up-->
+    <!-- <h1></h1> -->
+    <!-- <h2></h2> -->
+    <!-- <h3></h3> -->
+    <!-- <h4></h4> -->
+    <!-- <h5></h5> -->
+    <!-- <h6></h6> -->
+    <!--P Tags - a Phrase to hold sentences such as in article-->
+    <!-- <p></p> -->
+    <!--strong tag - turns the text font to bold-->
+    <!-- <strong></strong> -->
+    <!--em tag - turns the text font to italic-->
+    <!-- <em></em> -->
+    <!--ol tag - ordered list-->
+    <!-- <ol></ol> -->
+    <!--li tag - list item-->
+    <!-- <li></li> -->
+    <!--ul tag - unordered list-->
+    <!-- <ul></ul> -->
+    <!-- <abbr> (Abbreviation): Use this for abbreviations or acronyms.
+    <abbr title="World Wide Web">WWW</abbr>
+    <cite> (Citation): Use this for citations or references.
+    <cite>Book Title</cite>
+    <code> (Code): Use this for displaying code snippets.
+    <code>console.log('Hello, world!');</code> -->
+    <!--Use icons - Windows logo key  + . (period)-->
+    <!--Fourth - HTML Attributes - piece of data/information we describing-->
+    <!-- <img src="url or local image" alt="alternative text in case the image is problematic" width="500" height="200" /> -->
+    <!--a Links - create a link with a describtion to appear in the site-->
+    <!--<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>-->
+    <!--<a href="#">Place holder link if dont have the url but we still want to right this link</a>-->
+    <!--nav tag - when we have a couple of links in the top of the page-->
+    <!--The element itself doesnt change the apearence of this links' it just group them together-->
+    <!-- <nav>
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+        <a href="#">link 4</a>
+    </nav> -->
+    <!--header tag - the top part of web document or a top part of a simple unit-->
+    <!--article tag - for an article-->
+    <!--footer tag - for the bottom part of the page-->
+    <!-- <footer id="copyright"></footer> -->
+    <!--Fifth - HTML Comments-->
+    <!-- `<`!----`>` -->
+    <!--div - element without semantic html - a simple box-->
+    <!--Sixth - HTML Entities-->
+    <!-- &lt; -->
+    <!-- &gt; -->
+    <!-- &amp; -->
+    <!-- &quot; -->
+    <!-- &apos; -->
+    <!-- &nbsp; -->
+    <!-- &copy; -->
+    <!-- &reg; -->
+    <!-- &trade; -->
+    <!--Identation - space of hirarchy between tags-->
+    <!--VSCode Settings-->
+    <!--VSCode Extensions-->
+    <!--1. image preview-->
+    <!--2. color highlight - relevant in CSS-->
+    <!--3. auto rename tag - also changing the closing tag while changing the opening tag name element-->
+    <!--4. live server-->
+    <!--To turn off auto closing tag, Settings->auto closing tags->checkbox  -->
+    <!--Regardless - Box-sizing: border box--->
+    <!--Box model - creating a box without influence by it's default definitions-->
+    <!--
+    Space:
+    It is the descendant selector. It allows you to style all the nested child elements of a parent element, regardless of how deep they are in the hierarchy.
+
+    div#container p{
+    background-color:green;
+    }
+
+    It will target all p tags within container div in our example.
+    -->
+
+    <!--
+    > Sign:
+    It is a child selector, which selects DIRECT child elements of a   specified parent element.
+
+    div#container > p {
+    background-color:green;
+    }
+    It will target all P element which are direct children of container div, not children of child div.
+    -->
+
+    <!--
+    + (plus) Sign:
+    It is Adjacent sibling combinator. It combines two sequences of simple selectors having the same parent and the second one must come IMMEDIATELY after the first.
+
+    div + p {
+    background-color:green;
+    }
+    css selector sibling
+    It will only select the first element that is immediately preceded by the former selector. In our example, it will target to Second ONLY because the owner P element comes just after Div tag.
+    -->
+
+    <!--
+    ~ (tilde) Sign:
+    It is general sibling combinator and similar to Adjacent sibling combinator. The difference is that the second selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selector.
+
+    div ~ p{
+    background-color:green;
+    }
+    css selector sibling
+    It will target all P elements which follows div i.e. both second and third.
+    -->
+
+    <!-- <div id="container">
+    div#container
+    <p>p</p>
+    <div>
+        div
+        <p>p</p>
+    </div>
+    <p>p</p>
+    <p>p</p>
+    </div> -->
+</body>
+
+</html>
