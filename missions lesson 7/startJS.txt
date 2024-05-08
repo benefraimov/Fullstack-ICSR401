@@ -1,0 +1,44 @@
+    <!--Show Devtools in presentation of the console-->
+
+    <!--Write js code for example of the start of using js-->
+    <!--alert("Hello World!")-->
+    <!--let js = "it's nice"-->
+    <!--if(js === "it's nice") alert("Hey you new developer!")-->
+    <!--js = "boring"-->
+    <!--if(js === "it's nice") alert("Hey you new developer!")-->
+    <!--10+10+11+11-->
+
+    <!--Explain JS - Javascript is a high-level object-oriented, multi-paradigm programming language-->
+
+    <!--Programming language - instruct computer to do things-->
+    <!--High level - We dont need to think of the complexity behind the scenes, like memory management-->
+    <!--OOP - Based on objects, for storing most kind of data-->
+    <!--Multi-paradigm - We can use different style of programming-->
+
+    <!--Why?-->
+
+    <!--Html - responsible for elements (Nouns-Content)-->
+    <!--CSS - responsible for design this elements (Adjective-Presentation)-->
+    <!--JavaScript - responsible for make operations on elements (Programming language-Verb)-->
+
+    <!--Example on a website such as twitter-->
+
+    <!--Dynamic effects and web applications in the browser-->
+    <!--Client side Libraries (React.js, Vue.js, Angular.js)-->
+    <!--Server side Apps (Node.js)-->
+    <!--Native Desktop Apps (Expo)-->
+    <!--Server side Apps (React Native)-->
+
+    <!--JavaScript Versions-->
+
+        ES5
+        ES6/ES2015
+        ES7/ES2016
+        ES8/ES2017
+        ES9/ES2018
+        ES10/ES2019
+        ES11/ES2020
+        ES12/ES2021
+        ES13/ES2022
+        ES14/ES2023
+        ES15/ES2024
