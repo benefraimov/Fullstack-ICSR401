@@ -6,10 +6,3 @@
 // 3. Try to change one of the changed variables now, and observe what happens.
 
 // Practice solution.
-{
-    language = 'portuguese';
-    const country = 'Portugal';
-    const continent = 'Europe';
-    const isIsland = false;
-    isIsland = true;
-}

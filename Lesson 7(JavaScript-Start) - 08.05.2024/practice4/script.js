@@ -10,23 +10,3 @@
 // 5. Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
 
 // Practice solution.
-{
-    console.log(population / 2);
-
-    population++;
-
-    console.log(population);
-    console.log(population > 6);
-    console.log(population < 33);
-
-    const description1 =
-        country +
-        ' is in ' +
-        continent +
-        ', and its ' +
-        population +
-        ' million people speak ' +
-        language;
-
-    console.log(description1);
-}

@@ -17,21 +17,3 @@
 // 8. Reflect on why we should use the === operator and type conversion in this situation.
 
 // Practice solution.
-{
-    const numNeighbours = prompt(
-        'How many neighbour countries does your country have?'
-    );
-
-    //   // LATER : This helps us prevent bugs
-    //   const numNeighbours = Number(
-    //     prompt('How many neighbour countries does your country have?')
-    //   );
-
-    if (numNeighbours === 1) {
-        console.log('Only 1 border!');
-    } else if (numNeighbours > 1) {
-        console.log('More than 1 border');
-    } else {
-        console.log('No borders');
-    }
-}

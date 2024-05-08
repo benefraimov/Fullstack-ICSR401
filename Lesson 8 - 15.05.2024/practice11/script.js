@@ -4,8 +4,3 @@
 // 2. After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
 
 // Practice solution.
-{
-    console.log(
-        `${country}'s population is ${population > 33 ? 'above' : 'below'} average`
-    );
-}
