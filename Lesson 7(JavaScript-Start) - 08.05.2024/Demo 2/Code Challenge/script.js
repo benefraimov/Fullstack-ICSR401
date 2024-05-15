@@ -11,3 +11,28 @@ HINT: Use an if/else statement 😉
 
 GOOD LUCK 😀
 */
+//BMI = mass / height ** 2
+let marksMass = 78;
+let johnMass = 95;
+
+let marksHeight = 1.69;
+let johnHeight = 1.88;
+
+const markBMI = marksMass / marksHeight ** 2;
+const johnBMI = johnMass / johnHeight ** 2;
+
+const markHigherBMI = markBMI > johnBMI;
+console.log("markHigher BMI : ", markHigherBMI);
+
+// let strExample = "world";
+
+if (!markHigherBMI) {
+  console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+//   strExample = "guys";
+} else {
+  console.log(`John's BMI ${johnBMI} is higher than Mark's ${markBMI}!`);
+}
+
+// const strHello = "world";
+// const strTemplateLiteral = `hello ${strExample}`;
+// console.log(strTemplateLiteral);
