@@ -1,8 +1,23 @@
 // Basic Array Operations(Methods)
 // push
-// unshift
 // pop
 // shift
 // indexOf
 // includes
-// includes
+
+// let arr = [];
+
+// arr.push("a");
+// arr.push("b");
+// arr.push("c");
+
+// console.log(arr);
+
+
+let arr = ["a","b","c"];
+
+let data = arr.includes("d");
+
+//console.log(arr[data]);
+
+console.log(data);

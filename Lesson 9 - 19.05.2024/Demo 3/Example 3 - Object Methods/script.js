@@ -12,3 +12,17 @@
 //         return this.age;
 //     }
 // }
+
+const Class = {
+    grade: 1,
+    name: "Maor",
+    CongratzStudent: function(inClass){
+        console.log("Welcome " + this.name + " To Grade: " + this.grade + (inClass ? " In Class" : " Not In Class"));
+    }
+}
+
+console.log(Class.CongratzStudent(true));
+
+Class.grade = 12;
+
+console.log(Class.CongratzStudent(false));
