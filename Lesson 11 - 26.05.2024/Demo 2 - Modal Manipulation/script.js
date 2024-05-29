@@ -13,7 +13,7 @@ for (let i = 0; i < modalArr.length; i++) {
   modalArr[i].addEventListener("click", function () {
     // alert(modalArr[i].textContent)
     modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");    
+    overlay.classList.remove("hidden");
   });
 }
 
@@ -39,3 +39,13 @@ for (let i = 0; i < modalArr.length; i++) {
 // log the e - event
 // })
 // e.key === 'Escape' ? classList hidden exists ?
+
+const str1 = "abcde";
+
+console.log(str1.length);
+
+let x = 7;
+
+for (let i = 0; i < x; i++) {
+  console.log(x);
+}
