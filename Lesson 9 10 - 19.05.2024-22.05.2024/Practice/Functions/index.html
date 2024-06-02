@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      //////////// Functions
+      // 1.
+
+      //   function calculator(param1, param2) {
+      //     const paramaSum = param1 + param2;
+      //     console.log(paramaSum);
+      //   }
+
+      //   calculator(6, 8);
+
+      // 2.
+
+      //   function stringCalculator(param1, param2) {
+      //     if (param1.length > param2.length) {
+      //       console.log(param1);
+      //     } else if (param1.length < param2.length) {
+      //       console.log(param2);
+      //     } else {
+      //       console.log("Strings equals in their length, ", param1, param2);
+      //     }
+      //   }
+
+      //   stringCalculator("Avi", "Yeuda");
+
+      // 3.
+      //   const booleanArr = [true, false, true, false];
+      //   booleanCalc(booleanArr);
+
+      //   function booleanCalc(param1) {
+      //     let sum = 0;
+      //     for (let i = 0; i < param1.length; i++) {
+      //       if (param1[i] === true) {
+      //         sum++;
+      //       }
+      //     }
+      //     console.log("Sum of true occurnses is: ", sum);
+      //   }
+
+      //   booleanCalc(booleanArr);
+
+      // 4.
+      const numbersArr = [1, 2, 3, 4]; // output: 24
+
+      numberCalc(numbersArr);
+
+      function numberCalc(param1) {
+        let sum = 1;
+        for (let i = 0; i < param1.length; i++) {
+          sum *= param1[i];
+        }
+        console.log("Sum is: ", sum);
+      }
+    </script>
+  </body>
+</html>

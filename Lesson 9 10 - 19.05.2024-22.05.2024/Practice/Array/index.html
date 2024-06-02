@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body>
+    <script>
+      //////////////////
+      ////// Arrays
+
+      // 1.
+      //   const arr = [5, 6, 2, 9, 12, 4];
+
+      //   const firstValue = arr[0];
+      //   // option 1
+      //   // const lastValue = arr[5];
+      //   // option 2
+      //   const lastValue = arr[arr.length - 1];
+
+      //   const valuesSum = firstValue + lastValue;
+      //   console.log(valuesSum);
+
+      // 2.
+      //   const arr = [5, 6, 2, 9, 12, 4];
+
+      //   arr[2] = arr[0] * arr[1];
+
+      //////////// array methods
+      //  push - add a new value to the after the last index in the array
+      //  arr.push(10);
+      //  unshift - add a new value to the first index in the array
+      //  arr.unshift(1);
+      //  pop - remove tha last value from the array
+      //  arr.pop();
+      //  shift - remove the first value from the array
+      //  arr.shift();
+      //  splice - remove one or more consecutive values from a specific index in the array
+      //  first paramater in splice method is the index that we want to remove from the array, the second parameter is the number of elements that we want to remove.
+      //  for instance, if we want to  remove the first index, we will use arr.splice(0, 1)
+      //  if we want to remove the second index and three more elements after it we will use arr.splice(1, 4)
+      //  arr.splice(0, 1);
+
+      //  console.log(arr);
+
+      // 3.
+      //   const arr = [5, 6, 2, 9, 12, 4];
+
+      //   let sum = 0;
+
+      //   for (let i = 0; i < arr.length; i++) {
+      //     // option 1
+      //     // sum = sum + arr[i];
+      //     // option 2
+      //     sum += arr[i];
+      //   }
+
+      //   console.log("Total sum is: ", sum);
+
+      // 4.
+      //   const strArr = ["Avi", "Yosi", "Yeuda", "Nikita"];
+
+      //   for (let i = 0; i < strArr.length; i++) {
+      //     if (strArr[i].length > 4) {
+      //       console.log(strArr[i]);
+      //     }
+      //   }
+
+      // 5.
+      //   const booleanArr = [true, false, true, false, true, false, true, false];
+
+      //   let sum = 0;
+
+      //   for (let i = 0; i < booleanArr.length; i++) {
+      //     if (booleanArr[i] == true) {
+      //       sum++;
+      //       // sum += 1;
+      //       // sum = sum + 1;
+      //     }
+      //   }
+
+      //   console.log("Total 'true' values in the boolean array is: ", sum);
+
+      // prettier - alt+shift+f
+      // 6.
+      const arrayOfArrays = [
+        [1, 6, 7],
+        [8, 3],
+        [2, 9, 5, 4],
+      ];
+
+      //   let arr = [1, 6, 7];
+      // 6.a.
+      // [1, 6, 7] = arrayOfArrays[0]
+      // [8, 3] = arrayOfArrays[1]
+      // [2, 9, 5, 4] = arrayOfArrays[2]
+      // option 1 - don't use this way!!!!!
+      //   console.log(
+      //     arrayOfArrays[0][0],
+      //     arrayOfArrays[0][1],
+      //     arrayOfArrays[0][2],
+      //     arrayOfArrays[1][0],
+      //     arrayOfArrays[1][1],
+      //     arrayOfArrays[2][0],
+      //     arrayOfArrays[2][1],
+      //     arrayOfArrays[2][2],
+      //     arrayOfArrays[2][3]
+      //   );
+      //   // option 2 - use loop in loop(recommended)
+      //   for (let i = 0; i < arrayOfArrays.length; i++) {
+      //     for (let j = 0; j < arrayOfArrays[i].length; j++) {
+      //       console.log(arrayOfArrays[i][j]);
+      //     }
+      //   }
+
+      // 6.b.
+      //   for (let i = 0; i < arrayOfArrays.length; i++) {
+      //     console.log(arrayOfArrays[i].length);
+      //   }
+
+      // 6.c.
+      //   for (let i = 0; i < arrayOfArrays.length; i++) {
+      //     for (let j = 0; j < arrayOfArrays[i].length; j++) {
+      //       if (arrayOfArrays[i][j] > 4 && arrayOfArrays[i][j] < 8) {
+      //         console.log(arrayOfArrays[i][j]);
+      //       }
+      //     }
+      //   }
+
+      // 6.d.
+
+      //   let sum = 0;
+
+      //   for (let i = 0; i < arrayOfArrays.length; i++) {
+      //     for (let j = 0; j < arrayOfArrays[i].length; j++) {
+      //       sum += arrayOfArrays[i][j];
+      //     }
+      //   }
+
+      //   // option 1
+      //   console.log("Total sum is: ", sum);
+      //   // option 2
+      //   console.log(`Total sum is: ${sum}`);
+    </script>
+  </body>
+</html>
