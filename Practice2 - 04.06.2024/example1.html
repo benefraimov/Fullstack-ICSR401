@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Typeof Data</title>
+</head>
+
+<body>
+
+    <!-- <form action="./example1form.html">
+        <label>username</label>
+        <input type="text" minlength="4" maxlength="50"
+            required />
+        <label>Password</label>
+        <input type="password" minlength="6" maxlength="16"
+            required />
+        <input type="submit" value="submit" />
+    </form> -->
+
+    <script>
+
+        'use strict';
+
+        // let hasDriverLicesnce = false;
+        // let carLicense = true;
+        // if (carLicense) {
+        //     hasDriverLiscesnce = true;
+        // }
+
+        // typeof 
+        // let x = 5;
+        // console.log("The x variable data type is: ", typeof x);
+
+        //for loop
+        // console.log('/////////For Loop//////////')
+        // let y = 10
+        // for (let i = 0; i < y; i++) {
+        //     y--;// y = y - 1;
+        //     console.log("y is now: ", y);
+        // }
+        // iteration 1 - y=10,i=0
+        // iteration 2 - y=9,i=1
+        // iteration 3 - y=8,i=2
+        // iteration 4 - y=7,i=3
+        // iteration 5 - y=6,i=4
+        // iteration 6 - y=5,i=5
+        // iteration 7 - Not Happen!
+
+
+        // while
+        // console.log('/////////While Loop//////////')
+        // y = 10;
+        // let i = 0;
+        // while (i < y) {
+        //     y--;
+        //     console.log("y is now: ", y);
+        //     i++;
+        // }
+
+
+        // do while
+        // console.log('/////////Do While Loop//////////')
+        // y = 10;
+        // i = 0;
+
+        // do {
+        //     y--;
+        //     console.log("y is now: ", y);
+        //     i++;
+        // } while (i < y);
+
+        // call a function through another function
+        // // step 4
+        // function callback() {
+        //     //  step 5
+        //     console.log("Hello world")
+        // }
+
+        // // step 2
+        // function printHello() {
+        //     // step 3
+        //     callback();
+        // }
+
+        // // step 1
+        // printHello();
+
+        // // step 4
+        // const callback = () => {
+        //     // step 5
+        //     console.log("Hello from callback");
+        // }
+
+        // // step 2
+        // const printHello = () => {
+        //     // step 3
+        //     callback();
+        // }
+
+        // // step 1
+        // printHello();   
+
+        ////////////// Objects
+
+        // let car1 = {
+        //     // property has key and value 
+        //     // key: value,
+        //     // key: value
+        //     make: "Citroen",
+        //     model: "Berlingo",
+        //     year: 2014,
+        //     otherModels: ["c4", "c5", "cactus"],
+        //     printCar: function () {
+        //         const carMake = this.make;
+        //         const carModel = this.model;
+        //         const carYear = this.year;
+        //         const carSpec = `My car make is ${carMake}, the model is ${carModel} and the year is ${carYear}.`;
+        //         console.log(carSpec);
+        //     },
+        //     printModels: function () {
+        //         console.log("The car has more models:")
+        //         for (let index = 0; index < this.otherModels.length; index++) {
+        //             const element = this.otherModels[index];
+        //             console.log(element)
+        //         }
+        //     }
+        // };
+
+        // car1.printCar();
+        // car1.printModels();
+
+        // const car1Make = car1.make;
+        // console.log(car1Make)
+
+        // const car1Model = car1["model"];
+        // console.log(car1Model)
+
+        // const car1Models = car1.otherModels;
+        // console.log(car1Models)
+
+        // let i = 0;
+        // while (i < car1Models.length) {
+        //     console.log(car1Models[i])
+        //     i++;
+        // }
+
+        // let car2 = {
+        //     // property has key and value 
+        //     // key: value,
+        //     // key: value
+        //     make: "Mazda",
+        //     model: "6",
+        //     year: 2012,
+        //     otherModels: ["3", "2", "cx-5"]
+        // };
+
+        let people = [
+            {
+                name: "Avi",
+                age: 29,
+                phones: {
+                    mobile: "123",
+                    home: "123",
+                    fax: "123"
+                }
+            },
+            {
+                name: "Yosi",
+                age: 24,
+                phones: {
+                    mobile: "456",
+                    home: "456",
+                    fax: "456"
+                }
+            },
+            {
+                name: "Aviran",
+                age: 35,
+                phones: {
+                    mobile: "789",
+                    home: "789",
+                    fax: "789"
+                }
+            },
+        ];
+
+        const personName = arrayOfObjects(people, "789");
+        console.log(personName)
+
+        function arrayOfObjects(param1, param2) {
+            for (let i = 0; i < param1.length; i++) {
+                const personMobile = param1[i].phones.mobile;
+                if (personMobile == param2) {
+                    return param1[i].name;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
