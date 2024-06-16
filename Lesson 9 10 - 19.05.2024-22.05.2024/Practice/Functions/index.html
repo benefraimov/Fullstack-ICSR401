@@ -48,16 +48,291 @@
       //   booleanCalc(booleanArr);
 
       // 4.
-      const numbersArr = [1, 2, 3, 4]; // output: 24
+      // const numbersArr = [1, 2, 3, 4]; // output: 24
 
-      numberCalc(numbersArr);
+      // numberCalc(numbersArr);
 
-      function numberCalc(param1) {
-        let sum = 1;
-        for (let i = 0; i < param1.length; i++) {
-          sum *= param1[i];
+      // function numberCalc(param1) {
+      //   let sum = 1;
+      //   for (let i = 0; i < param1.length; i++) {
+      //     sum *= param1[i];
+      //   }
+      //   console.log("Sum is: ", sum);
+      // }
+
+      // 5.
+
+      // function multi(param1, param2, param3){
+      //   const sum = param1 * param2 * param3;
+      //   return sum;
+      // }
+
+      // console.log(multi(3, 3, 3));
+
+      // 6.
+
+      // function stringLength(param1, param2) {
+      //   const param1Length = param1.length;
+      //   const param2Length = param2.length;
+
+      //   if (param1Length < param2Length) {
+      //     return param1Length;
+      //   } else if (param1Length > param2Length) {
+      //     return param2Length;
+      //   } else {
+      //     return "Tie";
+      //   }
+      // }
+
+      // const shorterString = stringLength("123", "1234");
+      // console.log(shorterString);
+
+      // 7.
+
+      // function booleanLogic(param1, param2, param3) {
+      //   const sumOfNumbers = param1 + param2;
+      //   if (sumOfNumbers > 10) {
+      //     return param3;
+      //   } else {
+      //     return !param3;
+      //   }
+      // }
+
+      // const result = booleanLogic(2, 3, true);
+      // console.log(result);
+
+      // 8.
+
+      // function arrayNumbers(param){
+      //   // return an array in length of param.length
+      //   // [1, 2, ... param]
+
+      //   let array = [];
+      //   let sum = 0;
+      //   for(let i = 0; i < param; i++){
+      //     sum++;
+      //     array.push(sum);
+      //   }
+      //   return array;
+      // }
+
+      // const array = arrayNumbers(10);
+      // console.log(array);
+
+      // 9.
+
+      // function func1(param1, param2) {
+      //   const multi = param1 * param2;
+      //   func2(multi);
+      // }
+
+      // function func2(param) {
+      //   console.log("result: ", param);
+      // }
+
+      // func1(2, 5);
+
+      // 10.
+
+      // function numbersInArray(param) {
+      //   // [5, 8, 11, 13, 1]
+      //   let sum = 0;
+      //   for (let i = 0; i < param.length; i++) {
+      //     const valueBiggerThan5 = param[i] > 5;
+      //     if (valueBiggerThan5) {
+      //       sum++;
+      //     }
+      //   }
+      //   return sum;
+      // }
+
+      // const array = [5, 8, 11, 13, 1];
+      // const result = numbersInArray(array);
+      // console.log("result: ", result);
+
+      // 11.
+
+      // let array = ["Hello", "World", ":-)", "zohe"];
+
+      // function arraysOfstring(param) {
+      //   let newString = "";
+
+      //   for (let i = 0; i < param.length; i++) {
+      //     let strLength = param[i].length;
+      //     if (strLength < 5) {
+      //       newString += param[i];
+      //     }
+      //   }
+
+      //   return newString;
+      // }
+
+      // const functionCall = arraysOfstring(array);
+      // console.log(functionCall);
+
+      // 12.
+
+      // function booleanArray(param) {
+      //   let booleans = [];
+      //   for (let i = 0; i < param; i++) {
+      //     let booleanValue = Boolean(
+      //       +prompt(`Loop Index is: ${i + 1} Write 1 or 0`)
+      //     );
+      //     booleans.push(booleanValue);
+      //   }
+      //   return booleans;
+      // }
+
+      // let inputNumber = +prompt("Write a number");
+      // const finalBooleanArray = booleanArray(inputNumber);
+      // console.log(finalBooleanArray);
+
+      // 12*.
+
+      // function createArray(){
+      //   const inputNumber = +prompt("Enter a number");
+
+      //   const arr = [];
+      //   let sum = 0;
+
+      //   for(let i =0; i < inputNumber; i++){
+      //     let valueNumber = +prompt("Enter value(number)")
+      //     arr.push(valueNumber);
+      //     // option 1
+      //     // sum += arr[i];
+      //     // option 2
+      //     sum += valueNumber;
+      //   }
+
+      //   return sum;
+      // }
+
+      // 13*.
+
+      // // step 1
+      // function returnStringLength(param) {
+      //   let paramLength = param.length;
+      //   return paramLength;
+      // }
+
+      // // step 2
+      // let stringsArray = ["avi", "zohar", "nikita"];
+
+      // function arrayOfString(param) {
+      //   let sum = 0;
+      //   for (let i = 0; i < param.length; i++) {
+      //     const stringLength = returnStringLength(param[i]);
+      //     sum += stringLength;
+      //   }
+      //   return sum;
+      // }
+
+      // const totalLength = arrayOfString(stringsArray);
+      // console.log("Total Length is: ", totalLength);
+
+      // 14**.
+
+      // // step 1
+      // // option 1
+      // const add = function (param1, param2) {
+      //   const sum = param1 + param2;
+      //   return sum;
+      // };
+
+      // // option 2
+      // // const add2 = (param1, param2) => param1 + param2
+
+      // // step 2
+      // const mull = function (param1, param2) {
+      //   let sum = 0;
+      //   let leader;
+      //   let follower;
+
+      //   if (param1 < param2) {
+      //     leader = param1;
+      //     follower = param2;
+      //   } else if (param2 < param1) {
+      //     leader = param2;
+      //     follower = param1;
+      //   } else {
+      //     leader = param1;
+      //     follower = param2;
+      //   }
+
+      //   for (let i = 0; i < param1; i++) {
+      //     const totalSum = add(param2, sum);
+      //     sum = totalSum;
+      //   }
+
+      //   return sum;
+      // };
+
+      // const multiply = mull(8, 2);
+      // console.log(multiply);
+
+      // 15*.
+
+      // let arr1 = [1, 6, 7];
+      // let arr2 = [2, 5, 8];
+
+      // function arrayBiggerNumbers(param1, param2) {
+      //   let newArr = [];
+      //   for (let i = 0; i < param1.length; i++) {
+      //     let biggerNumber;
+      //     biggerNumber = param1[i] > param2[i] ? param1[i] : param2[i];
+      //     newArr.push(biggerNumber);
+      //   }
+      //   return newArr;
+      // }
+
+      // const resultArr = arrayBiggerNumbers(arr1, arr2);
+      // console.log(resultArr);
+
+      // 16*.
+
+      // 2, 4, 5, 6
+      // 2 > 4 && 4 > 5 && 2 > 6 ?
+      // 4 > 6 ?
+      // 5 > 6 ?
+      // 6
+      function biggest2(param1, param2, param3, param4) {
+        if (param1 > param2 && param1 > param3 && param1 > param4) {
+          // param1 biggest
+          if (param2 > param3 && param2 > param4) {
+            // param2 second bigg
+          } else if (param3 > param4 && param3 > param2) {
+            // param3 second bigg
+          } else {
+            // param4 second big
+          }
+        } else if (param2 > param1 && param2 > param3 && param2 > param4) {
+          // param2 biggest
+          if (param1 > param3 && param1 > param4) {
+            // param1 second bigg
+          } else if (param3 > param4 && param3 > param2) {
+            // param3 second bigg
+          } else {
+            // param4 second big
+          }
+        } else if (param3 > param1 && param3 > param2 && param3 > param4) {
+          // param3 biggest
+          if (param2 > param1 && param2 > param4) {
+            // param2 second bigg
+          } else if (param1 > param4 && param1 > param2) {
+            // param1 second bigg
+          } else {
+            // param4 second big
+          }
+        } else {
+          // param4 biggest
+          if (param2 > param3 && param2 > param1) {
+            // param2 second bigg
+          } else if (param3 > param1 && param3 > param2) {
+            // param3 second bigg
+          } else {
+            // param1 second big
+          }
         }
-        console.log("Sum is: ", sum);
       }
     </script>
   </body>
