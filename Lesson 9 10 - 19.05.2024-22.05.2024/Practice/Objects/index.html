@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //////// Objects
+
+      //1.
+
+      //   const objectBig = {
+      //     nums1: [4, 1, 2, 5],
+      //     nums2: [6, 1, 8, 3],
+      //     student: {
+      //       name: "Avi",
+      //       id: 111,
+      //       grades: {
+      //         nums3: [4, 1, 9, 3],
+      //       },
+      //     },
+      //   };
+
+      //   let nums1 = objectBig.nums1;
+      //   let nums3 = objectBig.student.grades.nums3;
+
+      //   let sum1 = 0;
+      //   let sum3 = 0;
+      //   let avgNums1;
+      //   let avgNums3;
+
+      //   for (let i = 0; i < nums1.length; i++) {
+      //     sum1 += nums1[i];
+      //   }
+      //   avgNums1 = sum1 / nums1.length;
+
+      //   for (let i = 0; i < nums3.length; i++) {
+      //     sum3 += nums3[i];
+      //   }
+      //   avgNums3 = sum3 / nums3.length;
+
+      //   avgNums1 > avgNums3
+      //     ? console.log("The bigger average is nums1 values: ", avgNums1)
+      //     : console.log("The bigger average is nums3 values: ", avgNums3);
+
+      // 2.
+
+      //   const arr = [[{ num1: 10 }, { num1: 40 }], [{ num1: 20 }]];
+
+      //   for (let i = 0; i < arr.length; i++) {
+      //     // console.log(arr[i]);
+      //     let innerArr = arr[i];
+      //     for (let j = 0; j < innerArr.length; j++) {
+      //     //   console.log(innerArr[j]);
+      //         let num1 = innerArr[j].num1;
+      //         console.log(num1)
+
+      //     }
+      //   }
+
+      // 3.
+
+      //   const arrOfObjects = [
+      //     {
+      //       Name: "Avi",
+      //       Age: "35",
+      //       Phones: {
+      //         Mobile: "111",
+      //         Home: "222",
+      //         Fax: "333",
+      //       },
+      //     },
+      //     {
+      //       Name: "Shlomi",
+      //       Age: "30",
+      //       Phones: {
+      //         Mobile: "444",
+      //         Home: "555",
+      //         Fax: "666",
+      //       },
+      //     },
+      //     {
+      //       Name: "Matan",
+      //       Age: "24",
+      //       Phones: {
+      //         Mobile: "777",
+      //         Home: "888",
+      //         Fax: "999",
+      //       },
+      //     },
+      //   ];
+
+      //   function personNameByPhone(param1, param2) {
+      //     for (let i = 0; i < param1.length; i++) {
+      //       const phoneMobile = param1[i].Phones.Mobile;
+      //       return phoneMobile == param2
+      //         ? param1[i].Name
+      //         : console.log("not the number");
+      //     }
+      //   }
+
+      //   console.log(personNameByPhone(arrOfObjects, "111"));
+
+      // 4.
+
+      //   const arrNames = ["Avi", "Shlomi", "Niv"];
+      //   const arrAges = [29, 35, 30];
+      //   const arrPhones = ["111", "222", "333"];
+
+      //   function arrOfObj(param1, param2, param3) {
+      //     const newArrOfObj = [];
+      //     for (let i = 0; i < param1.length; i++) {
+      //       let name = param1[i];
+      //       let age = param2[i];
+      //       let phone = param3[i];
+      //       let tempObj = {
+      //         name: name,
+      //         age: age,
+      //         phone: phone,
+      //       };
+      //       newArrOfObj.push(tempObj);
+      //     }
+      //     return newArrOfObj;
+      //   }
+
+      //   const newArr = arrOfObj(arrNames, arrAges, arrPhones);
+      //   console.log(newArr);
+
+      // 5.
+
+      const arrOfNames = [];
+
+      // option 1
+      //   while (true) {
+      //     const name = prompt("Enter a name");
+      //     if (name.length > 5) {
+      //       break;
+      //     }
+      //     let tempObj = {
+      //       name: name,
+      //     };
+      //     arrOfNames.push(tempObj);
+      //   }
+
+      //   console.log(arrOfNames);
+
+      // option 2
+      // let i = 0;
+      // do{
+      //   const name = prompt("Enter a name")
+      //   let tempObj = {
+      //     name: name
+      //   }
+      //   arrOfNames.push(tempObj)
+      //   i++;
+      // }while(arrOfNames[i-1].name.length <= 5)
+
+      // option 3
+      //   do {
+      //     const name = prompt("Enter a name");
+      //     if (name.length < 5) {
+      //       let tempObj = {
+      //         name: name,
+      //       };
+      //       arrOfNames.push(tempObj);
+      //     } else {
+      //       break;
+      //     }
+      //   } while (true);
+      //   console.log(arrOfNames);
+
+      //   let sum = 0;
+      //   for (let i = 0; i < arrOfNames.length; i++) {
+      //     sum += arrOfNames[i].name.length;
+      //   }
+      //   console.log("The total length of the names in the final array is: ", sum);
+    </script>
+  </body>
+</html>
