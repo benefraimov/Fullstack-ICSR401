@@ -32,26 +32,41 @@
 // where to define
 // random numbers: Math.random(), Math.trunc(reduse decimals)
 
+
+// let document1 = {
+//   h1: "this is header",
+// }
+
+// console.log(document1["h1"]);
+
+
 // The Game Solution
 
 // The Start with Check Button
 let numberToGuess = document.querySelector(".number");
-let numRandom = Math.trunc(Math.random() * 20) + 1;
-let guessedNumber = document.querySelector(".guess");
-let guessingMessage = document.querySelector(".message");
+let numRandom = Math.trunc(Math.random() * 20) + 1;// the random number 
+let guessedNumber = document.querySelector(".guess");// the guess input element
+let guessingMessage = document.querySelector(".message");// the guessing message 
 let score = document.querySelector(".score");
 let highScore = document.querySelector(".highscore");
 let body = document.querySelector("body");
 
-document.querySelector(".check").addEventListener("click", () => {
+console.log(numRandom)
+
+let checkButton = document.querySelector(".check");
+
+
+checkButton.addEventListener("click", () => {
   if (guessedNumber.value == numRandom) {
-    guessingMessage.textContent = "🎉 Correct Number!";
-    body.style.backgroundColor = "#60b347";
-    numberToGuess.textContent = numRandom;
-    if (highScore.textContent == 0 || score.textContent > highScore.textContent)
+    guessingMessage.textContent = "🎉 Correct Number!";// first manipulation
+    body.style.backgroundColor = "#60b347";// second manipulation 
+    numberToGuess.textContent = numRandom;// third manipulation 
+    if (Number(highScore.textContent) == 0 || Number(score.textContent) > Number(highScore.textContent)) {
+      console.log("highScore.textContent: ", highScore.textContent, "score.textContent", score.textContent)
       highScore.textContent = score.textContent;
+    }
   } else {
-    guessedNumber > numRandom ? guessingMessage.textContent = "📉 Too High.." : guessingMessage.textContent = "📈 Too Low..";  
+    guessedNumber.value > numRandom ? guessingMessage.textContent = "📉 Too High.." : guessingMessage.textContent = "📈 Too Low..";
     score.textContent--;
   }
 });
@@ -80,18 +95,19 @@ Good Luck Guys :-)
 
 // The Again Button - Evene Handler\Listener
 document.querySelector('.again').addEventListener("click", () => {
-    // Restore the body background color
-    body.style.backgroundColor = "#222";
-    // hide the random number
-    numberToGuess.textContent = "?";
-    // restore the input value
-    guessedNumber.value = "";
-    // restore the score text
-    score.textContent = "20";
-    // restore the guessing message
-    guessingMessage.textContent = "Start Guessing...";
-    // recreate the random number
-    numRandom = Math.trunc(Math.random() * 20) + 1;
+  // Restore the body background color
+  body.style.backgroundColor = "#222";
+  // hide the random number
+  numberToGuess.textContent = "?";
+  // restore the input value
+  guessedNumber.value = "";
+  // restore the score text
+  score.textContent = "20";
+  // restore the guessing message
+  guessingMessage.textContent = "Start Guessing...";
+  // recreate the random number
+  numRandom = Math.trunc(Math.random() * 20) + 1;
+  console.log(numRandom)
 })
 
 // implementing the reset functionality
