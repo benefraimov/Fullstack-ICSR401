@@ -17,6 +17,14 @@ for (let i = 0; i < modalArr.length; i++) {
   });
 }
 
+let closeButton = document.querySelector(".close-modal");
+
+closeButton.addEventListener("click", function () {
+  // console.log("works")
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
+
 // Show for loop to log the text
 // Add event listener on each of the element
 
@@ -35,17 +43,12 @@ for (let i = 0; i < modalArr.length; i++) {
 // * keypress
 
 // For ESC keyboard:
-// document.addEventListener('keydown', Callback Function (e) {
-// log the e - event
-// })
+document.addEventListener("keydown", function (event) {
+  // log the e - event
+  // console.log(event);
+  if (event.key === "Escape") {
+    overlay.classList.add("hidden");
+    modal.classList.add("hidden");
+  }
+});
 // e.key === 'Escape' ? classList hidden exists ?
-
-const str1 = "abcde";
-
-console.log(str1.length);
-
-let x = 7;
-
-for (let i = 0; i < x; i++) {
-  console.log(x);
-}
